@@ -18,7 +18,7 @@ To reproduce the results of Add Humour method, please run *BERT_and_RoBERTa.ipyn
 For reproducing the results of Context method, you can change the line in Class Task1Dataset:
 
         self.x_train = df['add_humour']
-to 
+to:
 
 	self.x_train = df['context']
 
@@ -52,7 +52,7 @@ Note: word_corpus(2) and word_corpus(3) will take a very long time to run. If yo
 	own_embedding_model.save("./word2vec.model")
 	print(own_embedding_model.most_similar('trump'))
 	
-and change this line 
+and change this line:
 	
 	with codecs.open('own_model.txt', 'r','utf-8') as f:
 to: 
