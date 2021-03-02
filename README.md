@@ -14,7 +14,14 @@ Please make sure the following are installed:
 The SIMPLEST way is to run all cells from top to bottom(e.g. Ctrl+Enter) for your choice of approach/method. The following subsections explains how to reproduce the quoted results in the report for specific model/approach.
 
 ### Approach 1 - Bert and Roberta
-To reproduce the results for this method, please run *BERT_and_RoBERTa.ipynb* file and the model obtained the best performance for both Bert and Roberta will be shown.
+To reproduce the results of Add Humour method, please run *BERT_and_RoBERTa.ipynb* file and the model obtained the best performance for both Bert and Roberta will be shown.
+For reproducing the results of Context method, you can change the line in Class Task1Dataset:
+
+        self.x_train = df['add_humour']
+to 
+
+	self.x_train = df['context']
+
 ### Approach 1 - BiLSTM
 To reproduce the results for this method, please run *BiLSTM.ipynb* file. 
 
