@@ -18,9 +18,11 @@ To reproduce the results of Add Humour method, please run *BERT_and_RoBERTa.ipyn
 For reproducing the results of Context method, you can change the line in Class Task1Dataset:
 
         self.x_train = df['add_humour']
+	
 to:
 
 	self.x_train = df['context']
+	
 
 ### Approach 1 - BiLSTM
 To reproduce the results for this method, please run *BiLSTM.ipynb* file. 
@@ -58,7 +60,9 @@ and change this line:
 to: 
 
 	with codecs.open('own_model_method2_200d.txt', 'r','utf-8') as f:
+	
 for word_corpus(2) or:
 
 	with codecs.open('own_model_method3_200d.txt', 'r','utf-8') as f:
+	
 for word_corpus(3). Feel free to edit the path so the code could run. 
