@@ -36,7 +36,7 @@ To select different corpus, please locate *change number in word_corpus* section
 - word_corpus(2): original  sentence  in train, dev and test.csv + additional  news  headlines.
 - word_corpus(3): original  sentence  in train, dev and test.csv + additional  news  headlines + edit sentences in train, dev and test.csv.
 
-Note: word_corpus(2) and word_corpus(3) will take a very long time to run. If you do not want to wait, please skip the following code:
+Note: word_corpus(2) and word_corpus(3) will take a very long time to run. If you do not want to wait, please download the file 'own_model_method2_200d.zip' for word_corpus(2) or 'own_model_method3_200d.zip' for word_corpus(3) and unzip the file to get '.txt' file. Skip the following code:
 	
 	add_data = word_corpus(2)
 	news_vocab, news_tokenized_corpus = create_vocab(add_data)
@@ -54,4 +54,4 @@ to:
 for word_corpus(2) or:
 
 	with codecs.open('own_model_method3_200d.txt', 'r','utf-8') as f:
-for word_corpus(3)
+for word_corpus(3). Feel free to edit the path so the code could run. 
